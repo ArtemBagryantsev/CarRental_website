@@ -77,11 +77,12 @@ WSGI_APPLICATION = 'carrental.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'carrental_db',
         'USER': 'postgres',
         'PASSWORD': 'pg2022',
-        'HOST': 'localhost'
+        'HOST': 'localhost',
+        'PORT': '5433',
     }
 }
 
